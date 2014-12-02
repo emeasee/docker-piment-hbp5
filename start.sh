@@ -1,6 +1,5 @@
 #!/bin/bash
-set -e
 
 git clone -b build --single-branch $REPO_URL /opt/site
 
-exec /usr/sbin/nginx
+exec /usr/sbin/nginx -g "deamon off;"
