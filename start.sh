@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 git clone -b build --single-branch $REPO_URL /opt/site
 
-/usr/bin/nginx
+exec /usr/sbin/nginx
