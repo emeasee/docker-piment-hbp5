@@ -2,4 +2,4 @@
 
 git clone -b build --single-branch $REPO_URL /opt/site
 
-/usr/sbin/nginx -s reload
+nginx -s reload
